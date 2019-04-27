@@ -1,0 +1,12 @@
+.container{
+    margin:50px 100px 0 100px;
+}
+.panel-body{
+    width: 500px;
+    height: 200px;
+}
+.panel-primary{
+    width: 500px;
+    height: 300px;
+    margin:50px 100px 0 300px;
+}

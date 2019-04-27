@@ -1,0 +1,103 @@
+.row{
+    background-color: black ;
+    color:white;
+}
+.row a:hover{
+    color:white;
+}
+.col-sm-0{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 100%;
+}
+a{color:white !important;}
+.col-sm-1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.col-sm-2{
+    margin-top: 20px;  
+}
+/* Nút thả xuống */
+.TOUR{
+    background-color:black;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    border: none; 
+}
+/* Container <div> - cần thiết để định vị nội dung thả xuống */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Nội dung thả xuống (Ẩn theo mặc định) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Liên kết bên trong danh sách thả xuống */
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Thay đổi màu của liên kết thả xuống khi di chuột */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Hiển thị menu thả xuống khi di chuột */
+.dropdown:hover .dropdown-content {display: block;}
+.footer{
+    background: black;
+    padding-top: 20px;
+    color: white;
+}
+h3{text-align: center; color: rgb(33, 161, 161); text-decoration: underline;}
+.content{
+    background-color: white;
+    color: black;
+}
+
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+.col-25,
+.col-50{
+  padding: 0 16px;
+}
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+.btn {
+    color: black;
+    padding: 5px 12px;
+    margin:  0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.don {
+    background-color: #f2f2f2;
+    padding: 5px 20px 35px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}

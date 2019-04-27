@@ -1,0 +1,98 @@
+.row{
+    background-color: black ;
+    color:white;
+}
+.row a:hover{
+    color:white;
+}
+.col-sm-0{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 100%;
+}
+a{color:white !important;}
+.col-sm-1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.col-sm-2{
+    margin-top: 20px;  
+}
+/* Nút thả xuống */
+.TOUR{
+    background-color:black;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    border: none; 
+}
+/* Container <div> - cần thiết để định vị nội dung thả xuống */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Nội dung thả xuống (Ẩn theo mặc định) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Liên kết bên trong danh sách thả xuống */
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Thay đổi màu của liên kết thả xuống khi di chuột */
+.dropdown-content a:hover {background-color: #ddd;}
+/* Hiển thị menu thả xuống khi di chuột */
+.dropdown:hover .dropdown-content {display: block;}
+.footer{
+    background-color: black;
+    padding-top: 20px;
+    color: white;
+}
+.content{
+    background-color: white;
+    color: black;
+}
+/*form dang nhap*/
+form{
+    
+    box-sizing: border-box;/* đường viền */
+    width: 500px;
+    margin: 100px auto 70px auto;
+    box-shadow: 2px 2px 5px 1px black;
+    padding-bottom: 40px;
+    border-radius: 3px;/*viền tròn*/
+}
+h1{
+    box-sizing: border-box;
+    padding: 20px 20px 20px 60px;
+    
+}
+.t{
+    margin: 20px 90px;
+}
+input {
+  width: 200px;
+  display:block;
+  border: none;/* đường viền chân k biên giới*/
+  padding: 9px 0;
+  border-bottom: solid 1px #0d023a;/* đường viền dưới*/
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);/*hiệu ứng khi di chuột tới*/
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #325de9 4%);
+  background-position: -200px 0;/*dinh vị nền*/
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+}
+input:focus{
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+
