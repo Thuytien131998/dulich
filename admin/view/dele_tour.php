@@ -1,7 +1,7 @@
 <?php
 include "view/tour.php";
     $idTour=$_GET['idTour'];
-    $conn=mysqli_connect('localhost','root','','btlon');
+    $conn=mysqli_connect('localhost','root','','dulich');
     if(!$conn){
         die("khong the ket noi".mysqli_connect_error());
     }
@@ -10,6 +10,6 @@ include "view/tour.php";
     $query=mysqli_query($conn,$sql);
     //thuc hien cau truy van
    if($query){
-    header("location: http://localhost:8080/tlu/dulich/admin/index.php?view=tour");
+    header("location: http://localhost:8080/dulich/admin/index.php?view=tour");
 }
 ?>

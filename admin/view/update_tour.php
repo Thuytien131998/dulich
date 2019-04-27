@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="../css/update_tour.css">
 <div class="content">
 <?php
-$conn=mysqli_connect('localhost','root','','btlon');
+$conn=mysqli_connect('localhost','root','','dulich');
 if(!$conn){
     die("khong the ket noi".mysqli_connect_error());
 }
@@ -28,7 +28,7 @@ if(isset($_POST["submit"])){
   $socho= mysqli_real_escape_string($conn,$_POST["socho"]);
   $idvung= mysqli_real_escape_string($conn,$_POST["idvung"]);
   $sql="UPDATE  tour set nameTour='$nameTour',ngaykhoihanh='$ngaykhoihanh',ngayketthuc='$ngayketthuc',gia='$gia',diemxuatphat='$diemxuatphat',noibat='$noibat',vungmien='$vungmien',vanchuyen='$vanchuyen',khachsan='$khachsan',images='$images',sochongoi='$sochongoi',lichtrinh='$lichtrinh',ghichu='$ghichu',socho='$socho',idvung='$idvung' where idTour='$idTour'";
-  header("Location: http://localhost:8080/tlu/dulich/admin/index.php?view=tour");
+  header("Location: http://localhost:8080/dulich/admin/index.php?view=tour");
   $query=mysqli_query($conn,$sql);
   mysqli_close($conn);
 }
@@ -86,7 +86,7 @@ if(isset($_POST["submit"])){
   <div class="form-group">
     <div class="col-sm-offset-3 col-sm-9">
       <input type="submit"  class="btn btn-primary" name="submit" value="Cập Nhập" >
-      <a class="btn btn-warning" href="http://localhost:8080/tlu/dulich/admin/index.php?view=tour" style="background-color: blue;">Trở về</a>
+      <a class="btn btn-warning" href="http://localhost:8080/dulich/admin/index.php?view=tour" style="background-color: blue;">Trở về</a>
     </div>
   </div>
 </form>

@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost","root","","btlon"); //mo ra kết nối đến máy chủ
+$con = mysqli_connect("localhost","root","","dulich"); //mo ra kết nối đến máy chủ
 if (mysqli_connect_errno())
 {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();//không thể kết nối

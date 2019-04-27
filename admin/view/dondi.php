@@ -17,7 +17,7 @@
 </tr>
 <tr>
 <?php
-    $conn=mysqli_connect('localhost','root','','btlon');
+    $conn=mysqli_connect('localhost','root','','dulich');
     if(!$conn){
         die("khong the ket noi".mysqli_connect_error());
     }

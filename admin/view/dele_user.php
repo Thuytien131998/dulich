@@ -1,7 +1,7 @@
 <?php
 include "view/users.php";
     $id=$_GET['id'];
-    $conn=mysqli_connect('localhost','root','','btlon');
+    $conn=mysqli_connect('localhost','root','','dulich');
     if(!$conn){
         die("khong the ket noi".mysqli_connect_error());
     }
@@ -10,6 +10,6 @@ include "view/users.php";
     $query=mysqli_query($conn,$sql);
     //thuc hien cau truy van
    if($query){
-    header("location: http://localhost:8080/tlu/dulich/admin/");
+    header("location: http://localhost:8080/dulich/admin/");
 }
 ?>

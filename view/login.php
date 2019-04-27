@@ -17,7 +17,7 @@
      <div>
      <div class="row">
       <div class="col-sm-1">
-      <a class="fa fa-home" href="http://localhost:8080/tlu/dulich/index.php"></a>
+      <a class="fa fa-home" href="http://localhost:8080/dulich/index.php"></a>
       </div>
       <div class="col-sm-1">
       <p><a href="mailto:Tien.vitconxauxi@gmail.com">
@@ -44,7 +44,7 @@
                     <button class="TOUR" href="#">TOUR TRONG NƯỚC</button>
                     <div class="dropdown-content">
                     <?php
-                      $con = mysqli_connect("localhost","root","","btlon"); //mo ra kết nối đến máy chủ
+                      $con = mysqli_connect("localhost","root","","dulich"); //mo ra kết nối đến máy chủ
                       if (mysqli_connect_errno())
                       {
                           echo "Failed to connect to MySQL: " . mysqli_connect_error();//không thể kết nối
@@ -66,14 +66,14 @@
                      $getmenu=getmenu();
                      if(isset($getmenu))foreach($getmenu as $value){
                     ?>
-                      <a href="http://localhost:8080/tlu/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
+                      <a href="http://localhost:8080/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
                       <?php
                       }
                       ?>
                     </div>
                   </div>
       <div class="col-sm-0">
-                    <a class="dangki" href="http://localhost:8080/tlu/dulich/view/register.php">Đăng kí</a>
+                    <a class="dangki" href="http://localhost:8080/dulich/view/register.php">Đăng kí</a>
                   </div>
      </div>
   </div>
@@ -86,7 +86,7 @@
     <button class="t" type="submit" name="submit" data-toggle="modal" data-target="#myModal">Đăng nhập</button>
 </div>
 <?php
-  $conn=mysqli_connect('localhost','root','','btlon');
+  $conn=mysqli_connect('localhost','root','','dulich');
   if(!$conn){
       die("khong the ket noi".mysqli_connect_error());
   }
@@ -99,7 +99,7 @@
     $num_row=mysqli_num_rows($query);
     if($num_row !=0){
       $_SESSION["loged_customer"]=true;
-      header("Location: http://localhost:8080/tlu/dulich/view/index1.php");
+      header("Location: http://localhost:8080/dulich/view/index1.php");
       $_SESSION["username_customer"]= $username;
       die();
     }
@@ -120,7 +120,7 @@
 <div class="footer">
     <div class="container">
       <div class="col-sm-5">
-        <a href="http://localhost:8080/tlu/dulich/index.php">DU LỊCH TRONG NƯỚC</a>
+        <a href="http://localhost:8080/dulich/index.php">DU LỊCH TRONG NƯỚC</a>
         <ul>
           <p>Email:Tien.vitconxaixi@gmail.com</p>
           <p>Tư vấn: 1900 1800</p>

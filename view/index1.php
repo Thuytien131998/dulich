@@ -24,7 +24,7 @@
           <div>
               <div class="row">
                   <div class="col-sm-1">
-                  <a class="fa fa-home" href="http://localhost:8080/tlu/dulich/view/index1.php" ></a></div>
+                  <a class="fa fa-home" href="http://localhost:8080/dulich/view/index1.php" ></a></div>
                   <div class="col-sm-1">
                     <p><a href="mailto:Tien.vitconxauxi@gmail.com">
                         Email
@@ -68,7 +68,7 @@
                      $getmenu=getmenu();
                      if(isset($getmenu))foreach($getmenu as $value){
                     ?>
-                      <a href="http://localhost:8080/tlu/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
+                      <a href="http://localhost:8080/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
                       <?php
                       }
                       ?>
@@ -84,14 +84,14 @@
                     <a href=""><span  class="glyphicon glyphicon-user"></span><?php if(isset($_SESSION["loged_customer"])) echo $customer;?></a>
                   </li>
                   <li>
-                  <a href="http://localhost:8080/tlu/dulich/view/logout.php" class="logout" title="Đăng xuất" type="dangxuat" name="dangxuat"><span  class="fa fa-sign-out"></span></a>
+                  <a href="http://localhost:8080/dulich/view/logout.php" class="logout" title="Đăng xuất" type="dangxuat" name="dangxuat"><span  class="fa fa-sign-out"></span></a>
                   </li></ul>
 				          <?php
 				            }
 				            else 
 				            {
 				          ?>
-                  <a href="http://localhost:8080/tlu/dulich/view/login.php">Đăng nhập</a>
+                  <a href="http://localhost:8080/dulich/view/login.php">Đăng nhập</a>
                   <?php	
 			       	      }
 				          ?> 
@@ -184,7 +184,7 @@
         <h4 class="text1"><?php echo $value["nameTour"]?></h4><span> Giá: <?php echo $value["gia"]?> vnd</span>
         <p><?php echo $value["khachsan"]?></p>
         <p>Khởi hành: <?php echo $value["diemxuatphat"]?></p>
-        <a href="http://localhost:8080/tlu/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
+        <a href="http://localhost:8080/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
       </div>
     </div>
   <?php
@@ -215,7 +215,7 @@
         <h4 class="text1"><?php echo $value["nameTour"]?></h4><span> Giá: <?php echo $value["gia"]?> vnd</span>
         <p><?php echo $value["khachsan"]?></p>
         <p>Khởi hành:<?php echo $value["diemxuatphat"]?></p>
-        <a href="http://localhost:8080/tlu/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
+        <a href="http://localhost:8080/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
       </div>
   </div>
   <?php
@@ -246,7 +246,7 @@
         <h4 class="text1"><?php echo $value["nameTour"]?></h4><span> Giá: <?php echo $value["gia"]?> vnd</span>
         <p><?php echo $value["khachsan"]?></p>
         <p>Khởi hành:<?php echo $value["diemxuatphat"]?></p>
-        <a href="http://localhost:8080/tlu/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
+        <a href="http://localhost:8080/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
       </div>
   </div>
   <?php
@@ -279,7 +279,7 @@
         <h4 class="text1"><?php echo $value["nameTour"]; ?></h4><span> Giá: <?php echo $value["gia"]?> vnd</span>
         <p><?php echo $value["khachsan"]?></p>
         <p>Khởi hành: <?php echo $value["diemxuatphat"]?></p>
-        <a href="http://localhost:8080/tlu/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
+        <a href="http://localhost:8080/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
       </div>
   </div>
   <?php
@@ -291,7 +291,7 @@
   <div class="footer">
     <div class="container">
       <div class="col-sm-5">
-        <a href="http://localhost:8080/tlu/dulich/view/index1.php">DU LỊCH TRONG NƯỚC</a>
+        <a href="http://localhost:8080/dulich/view/index1.php">DU LỊCH TRONG NƯỚC</a>
         <ul>
           <p>Email:Tien.vitconxaixi@gmail.com</p>
           <p>Tư vấn: 1900 1800</p>

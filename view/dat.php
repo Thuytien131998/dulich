@@ -13,7 +13,7 @@
 </head>
 <body>
 <?php
-$conn=mysqli_connect('localhost','root','','btlon');
+$conn=mysqli_connect('localhost','root','','dulich');
 if(!$conn){
     die("khong the ket noi".mysqli_connect_error());
 }
@@ -30,9 +30,9 @@ if(isset($_POST["submit"])){
   $soluong= mysqli_real_escape_string($conn,$_POST["soluong"]);
   echo $soluong;
   $tongDH= mysqli_real_escape_string($conn,$_POST["tongDH"]);
-  $sql="INSERT INTO donhang VALUES ('9','$name',' $phoneDH','$emailDH','$addressDH','$Tenthenganhang','$Masothe','$NHH','$idTour','$soluong','$tongDH','chưa nhận')";
+  $sql="INSERT INTO donhang VALUES ('3','$name',' $phoneDH','$emailDH','$addressDH','$Tenthenganhang','$Masothe','$NHH','$idTour','$soluong','$tongDH','chưa nhận')";
   $query=mysqli_query($conn,$sql);
-  header("Location: http://localhost:8080/tlu/dulich/index.php");
+  header("Location: http://localhost:8080/dulich/index.php");
 }
 ?>
 <div class="container-fluid">
@@ -40,7 +40,7 @@ if(isset($_POST["submit"])){
           <div>
               <div class="row">
               <div class="col-sm-1">
-                  <a class="fa fa-home" href="http://localhost:8080/tlu/dulich/index.php" ></a></div>  
+                  <a class="fa fa-home" href="http://localhost:8080/dulich/index.php" ></a></div>  
                   <div class="col-sm-1">
                     <p><a href="mailto:Tien.vitconxauxi@gmail.com">
                         Email
@@ -69,7 +69,7 @@ if(isset($_POST["submit"])){
                     <button class="TOUR" href="#">TOUR TRONG NƯỚC</button>
                     <div class="dropdown-content">
                     <?php
-                      $con = mysqli_connect("localhost","root","","btlon"); //mo ra kết nối đến máy chủ
+                      $con = mysqli_connect("localhost","root","","dulich"); //mo ra kết nối đến máy chủ
                       if (mysqli_connect_errno())
                       {
                           echo "Failed to connect to MySQL: " . mysqli_connect_error();//không thể kết nối
@@ -91,14 +91,14 @@ if(isset($_POST["submit"])){
                      $getmenu=getmenu();
                      if(isset($getmenu))foreach($getmenu as $value){
                     ?>
-                      <a href="http://localhost:8080/tlu/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
+                      <a href="http://localhost:8080/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
                       <?php
                       }
                       ?>
                     </div>
                   </div>
                   <div class="col-sm-1">
-                    <a class="log-in" href="http://localhost:8080/tlu/dulich/view/login.php">Đăng nhập</a>
+                    <a class="log-in" href="http://localhost:8080/dulich/view/login.php">Đăng nhập</a>
                   </div>  
               </div>
           </div>
@@ -154,7 +154,7 @@ if(isset($_POST["submit"])){
   </div>
   <div class="chitiet">
   <?php
-    $conn=mysqli_connect('localhost','root','','btlon');
+    $conn=mysqli_connect('localhost','root','','dulich');
     if(!$conn){
         die("khong the ket noi".mysqli_connect_error());
     }
@@ -197,7 +197,7 @@ if(isset($_POST["submit"])){
 <div class="footer">
     <div class="container">
       <div class="col-sm-5">
-        <a href="http://localhost:8080/tlu/dulich/index.php">DU LỊCH TRONG NƯỚC</a>
+        <a href="http://localhost:8080/dulich/index.php">DU LỊCH TRONG NƯỚC</a>
         <ul>
           <p>Email:Tien.vitconxaixi@gmail.com</p>
           <p>Tư vấn: 1900 1800</p>

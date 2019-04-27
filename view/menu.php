@@ -1,5 +1,5 @@
 <?php 
-  $con = mysqli_connect("localhost","root","","btlon"); //mo ra kết nối đến máy chủ
+  $con = mysqli_connect("localhost","root","","dulich"); //mo ra kết nối đến máy chủ
   if (mysqli_connect_errno())
   {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();//không thể kết nối
@@ -27,7 +27,7 @@
           <div>
               <div class="row">
                   <div class="col-sm-1">
-                  <a class="fa fa-home" href="http://localhost:8080/tlu/dulich/index.php" ></a></div>
+                  <a class="fa fa-home" href="http://localhost:8080/dulich/index.php" ></a></div>
                   <div class="col-sm-1">
                     <p><a href="mailto:Tien.vitconxauxi@gmail.com">
                         Email
@@ -56,7 +56,7 @@
                     <button class="TOUR" href="#">TOUR TRONG NƯỚC</button>
                     <div class="dropdown-content">
                     <?php
-                      $con = mysqli_connect("localhost","root","","btlon"); //mo ra kết nối đến máy chủ
+                      $con = mysqli_connect("localhost","root","","dulich"); //mo ra kết nối đến máy chủ
                       if (mysqli_connect_errno())
                       {
                           echo "Failed to connect to MySQL: " . mysqli_connect_error();//không thể kết nối
@@ -78,14 +78,14 @@
                      $getmenu=getmenu();
                      if(isset($getmenu))foreach($getmenu as $value){
                     ?>
-                      <a href="http://localhost:8080/tlu/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
+                      <a href="http://localhost:8080/dulich/view/menu.php?idvung=<?php echo $value["idvung"] ?>"><?php echo $value["vungmien"]?></a>
                       <?php
                       }
                       ?>
                     </div>
                   </div>
                   <div class="col-sm-1">
-                    <a class="log-in" href="http://localhost:8080/tlu/dulich/view/login.php">Đăng nhập</a>
+                    <a class="log-in" href="http://localhost:8080/dulich/view/login.php">Đăng nhập</a>
                   </div>  
               </div>
           </div>
@@ -120,7 +120,7 @@
           <h4 class="text1"><?php echo $value["nameTour"]?></h4><span> Giá: <?php echo $value["gia"]?> vnd</span>
           <p><?php echo $value["khachsan"]?></p>
           <p>Khởi hành:<?php echo $value["diemxuatphat"]?></p>
-          <a href="http://localhost:8080/tlu/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
+          <a href="http://localhost:8080/dulich/view/ta.php/?id=<?php echo $value["idTour"] ?>" class="more">Xem chi tiết>></a> 
         </div>
     </div>
     <?php
@@ -131,7 +131,7 @@
    <div class="footer">
     <div class="container">
       <div class="col-sm-5">
-        <a href="http://localhost:8080/tlu/dulich/index.php">DU LỊCH TRONG NƯỚC</a>
+        <a href="http://localhost:8080/dulich/index.php">DU LỊCH TRONG NƯỚC</a>
         <ul>
           <p>Email:Tien.vitconxaixi@gmail.com</p>
           <p>Tư vấn: 1900 1800</p>

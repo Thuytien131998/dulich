@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="../admin/css/ql.css">
 <?php
-$conn=mysqli_connect('localhost','root','','btlon');
+$conn=mysqli_connect('localhost','root','','dulich');
 if(!$conn){
     die("khong the ket noi".mysqli_connect_error());
 }
@@ -24,7 +24,7 @@ if(isset($_POST["submit"])){
   $sql="INSERT INTO tour (nameTour,ngaykhoihanh,ngayketthuc,gia,diemxuatphat,noibat,vungmien,vanchuyen,khachsan,images,sochongoi,lichtrinh,ghichu,socho,idvung)
                VALUES('$nameTour','$ngaykhoihanh','$ngayketthuc','$gia','$diemxuatphat','$noibat','$vungmien','$vanchuyen','$khachsan','$images','$sochongoi','$lichtrinh','$ghichu','$socho','$idvung')";
   $query=mysqli_query($conn,$sql);
-  header("Location: http://localhost:8080/tlu/dulich/admin/index.php?view=tour");
+  header("Location: http://localhost:8080/dulich/admin/index.php?view=tour");
 }
 ?>
 <div class="content">

@@ -12,5 +12,5 @@ if(isset($_GET["act"]))
 		break;	
 	}
 }
-header("Location: http://localhost:8080/tlu/dulich/");
+header("Location: http://localhost:8080/dulich/");
 ?>
